@@ -5,6 +5,7 @@
   <description>Cordova Device Plugin</description>
   <license>Apache 2.0</license>
   <keywords>cordova,device</keywords>
+  <asset src="www/alert.js" target="alert.js" />
   <js-module src="www/alert.js" name="alert">
     <clobbers target="notification" />
   </js-module>
