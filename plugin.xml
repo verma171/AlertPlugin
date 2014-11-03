@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="org.appmobi.notification" version="0.2.3">
+  <name>Alert</name>
+  <description>Cordova Device Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,device</keywords>
+  <js-module src="www/alert.js" name="alert">
+    <clobbers target="notification" />
+  </js-module>
+  <platform name="wp8">
+    <config-file target="config.xml" parent="/*">
+      <feature name="Alert">
+        <param name="wp-package" value="Alert"/>
+      </feature>
+    </config-file>
+    <source-file src="Alert.cs" />
+  </platform>
+</plugin>
